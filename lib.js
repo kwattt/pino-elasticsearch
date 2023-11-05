@@ -130,6 +130,10 @@ function pinoElasticSearch (opts = {}) {
     clientOpts.caFingerprint = opts.caFingerprint
   }
 
+  if (opts.Transport) {
+    clientOpts.Transport = opts.Transport
+  }
+
   if (opts.Connection) {
     clientOpts.Connection = opts.Connection
   }
